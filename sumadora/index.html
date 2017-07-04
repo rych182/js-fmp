@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sumadora</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!--
+1-Poner bien las id
+2-readonly es solo para que pueda leer, no modificar, no olvidar colocarlo
+3-En el input del boton, el value es para poner el nombre
+4-Para que muestre el resultado es usando "onclick"
+
+-->
+	<div class="contenedor">
+		<form action="">
+			<input type="text" id="numero1">
+			<p>+</p>
+			<input type="text" id="numero2">
+			<p>=</p>
+			<input type="text" id="resultado" readonly>
+			<input type="button" onclick="suma()"class="btn" value="Resultado">
+		</form>
+	</div>
+
+	<script src="js/calculadora.js"></script>
+</body>
+</html>
