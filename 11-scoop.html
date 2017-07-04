@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scoop in JS</title>
+</head>
+<body>
+	<script>
+	/*VARIABLES LOCALES
+	El navegador solo las detecta cuando las mandas llamar dentro de su función, PERO si la mandas llamar fuera la función el navegador no la encontrara.
+
+		function saludo() {
+			 text = "Hola mundo";
+			document.write(text);
+		}
+		saludo();
+	*/
+
+
+	/*VARIABLES LOCALES DENTRO DE FUNCIONES ANIDADAS
+	Desde document.write se puede buscar la variable hacia afuera , no se puede buscar hacia adentro. 
+	El scope funciona por niveles, si no encuentra una variable en el mismo nivel, subirá hacia afuera y buscara. Si no encuentra subirá a otro nivel y así sucesivamente.
+Si tenemos una función anidada (una función dentro de otra), podemos buscar variables de dentro hacia afuera, pero no desde una función no podemos buscar variables dentro de otra función.
+
+
+	function saludo(){
+		var texto = 'Hola Mundo';
+		function mensaje(){
+			//document.write(texto);
+			var texto = "Hola mundo";
+		}
+	document.write(texto);
+	mensaje();
+}	
+saludo();
+	*/
+
+
+/* VARIABLE GLOBAL
+Las variables globales pueden ser accedidas desde cualquier parte del codigo, incluyendo cualquier funcion
+
+var texto = "Hola mundo";
+
+function saludo() {
+	document.write(texto);
+	texto = 'Hola mundo, modificado';
+	document.write(texto);
+}
+
+saludo();
+
+NOTA IMPORTANTE
+Si una variable se declara fuera de una funcion, es global, pero si las variables dentro de una función TAMBIÉN pueden ser globales
+
+Si dentro de la funcion declaramos una variable usando la palabra VAR se volverá local, PERO SI NO LA USAMOS, sera global
+
+*/
+
+var texto = "Hola mundo";
+
+function saludo() {
+	document.write(texto + "<br>");
+	texto = 'Hola mundo, modificado';
+	document.write(texto);
+}
+
+saludo();
+
+
+/*FUNCIONES AUTOINVOCADAS
+Sirven para que terceros no puedan acceder a tu codigo, ni variables ni nada.
+
+(function(){
+	 var mensaje = "perro";
+	alert("Hola mundo");
+}())
+
+document.write(mensaje);
+*/
+
+	</script>
+</body>
+</html>
