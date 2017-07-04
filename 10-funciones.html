@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions in JS</title>
+</head>
+<body>
+
+<script>
+	
+	function suma (num1, num2) {
+		resultado = num1 + num2;
+		return resultado;
+	}
+	document.write(suma(2,3)); 
+
+//Así se hace una función autoinvocada, se usa ara no contaminar el espacio global
+	(function hola () {
+		alert("Hola mundo");
+	}());
+</script>
+
+
+</body>
+</html>
