@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodos y propiedades para los arreglos</title>
+</head>
+<body>
+	<script>
+
+	var amigos = ["Oscar", "Raul", "Sheepo", "Abby"];
+		// -- Metodo Length, se usa mucho en los arreglos para conocer cuantos valores tienes en el arreglo
+		//document.write(amigos.length);
+		//amigos[5] = "Ricardo"; 
+
+		// -- Metodo Join, te imprime tu valores separados con lo que quieras, guión, espacio, etc
+		//var cadenaTexto = amigos.join('-');
+
+		//document.write(amigos.join('-'));
+
+		// -- Metodo Pop y push, Pop agrega elimina el ultimo valor de tu array y el push agrega un nuevo valor a tu array
+		//amigos.pop();
+		//document.write(amigos);
+		//amigos.push('Felipe');
+		
+		// -- Metodo Shift y Unshift, shift elimina el primer elemento de mi arreglo y unshift agrega un elemento al inicio de mi arreglo
+		//amigos.unshift('Berenice');
+		//document.write(amigos.join('-'));
+		
+
+		// -- Metodo Concat, sirve para juntar 2 o mas arreglos
+		var amigas = ['Tere', 'Pamela', 'Carmen', 'Almita','Yuri', 'Lau', 'Karen'];
+		var comida = ['Hamburguesas','Pizza','Soda'];
+		var estados = ['Sonora','Colima','Veracruz','Morelos','CDMX']
+		var todosMisAmigos = amigos.concat(amigas,comida,estados);
+		//document.write(todosMisAmigos);
+
+
+
+		// -- Metodo Sort y Reverse, Sort te lo ordena alfabeticamente y Reverse de la Z a la A
+		//Solo funciona con cadena de texto, no con numeros
+		document.write(amigos.reverse());
+	</script>
+</body>
+</html>
