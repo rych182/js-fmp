@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodos y propiedades de las cadenas de texto</title>
+</head>
+<body>
+	<script>
+		nombre = "Ricardo Garrido";
+		numero_caracteres = nombre.length;
+		//document.write(numero_caracteres); length cuenta cuantos caracteres tiene
+		cortar = nombre.substring(0,7);
+		//document.write(cortar); substring corta desde el caracter que tu le digas
+		cortar2 = nombre.substr(8,7);
+		//document.write(cortar2); substr, el primer numero indica a partir de donde cortas y el segundo cuantos caracteres cortaras
+		nuevoNombre = nombre.replace('Garrido','Alias el ric');
+		//document.write(nuevoNombre); reemplaza lo que le indiques
+		//nombre = nombre.toUpperCase();
+		//document.write(nombre); Transforma las letras a mayusculas
+		//document.write(nombre.toUpperCase());
+		//document.write(nombre.toLowerCase()); Todo en minusculas
+		posicion = nombre.indexOf('o');
+		//document.write(posicion);Te dice la posicion de la primer letra que le indicaste
+		posicionUltima = nombre.lastIndexOf('o');
+		//document.write(posicionUltima); Te dice la posicion de la ultima letra que le indicaste
+	</script>
+</body>
+</html>
