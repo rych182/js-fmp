@@ -6,11 +6,22 @@
 </head>
 <body>
 	<script>
-	nombre = 5;
-	 while(nombre < 10){
-	 	document.write(nombre);
-	 	nombre++;
-	 }
+	function pizza(costo) {
+		total = costo * 1.16;
+		return total;
+	}
+	costo_total = pizza(200);
+	document.write(costo_total + "<br>");
+
+	function cobro(costo_total) {
+		banco = 1000;
+		if (costo_total < banco){
+			document.write("Tu pago a sido realizado.")
+		}else{
+			document.write("Saldo insuficiente");
+		}
+	}
+	cobro(costo_total)
 	</script>
 </body>
 </html>

@@ -14,7 +14,7 @@
 	}
 	document.write(suma(2,3)); 
 
-//Así se hace una función autoinvocada, se usa ara no contaminar el espacio global
+//Así se hace una función autoinvocada, se usa ara no contaminar el espacio global y para proteger nuestro código si usamos pluggins de terceros y utilizan las mismas variables
 	(function hola () {
 		alert("Hola mundo");
 	}());
