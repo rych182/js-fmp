@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="" name="formulario" id="formulario">
+		<input type="text" name="nombre" placeholder="nombre">
+
+		<input type="radio" name="sexo" id="hombre">
+		<label for="hombre">Hombre</label>
+
+		<input type="radio" name="sexo" id="mujer">
+		<label for="mujer">Mujer</label>
+
+		<input type="checkbox" name="sexo" id="terminos">
+		<label for="terminos">Terminos</label>
+
+		<input type="submit" value="Enviar"></input>
+	</form>
+
+	<script>
+		var formulario = document.getElementById('formulario');
+		var nombre = formulario.nombre;
+		var sexo = formulario.sexo;
+		var terminos = formulario.terminos;
+
+		function validar(e){
+			//Validamos el nombre, numero de caracteres y si hay algo escrito
+			if (nombre.value > 15) {
+				alert('Maximos de caracteres permitidos');
+			}else if(nombre.value == ''){
+				alert('Ingresa un nombre');
+			}
+
+			// Validamos los radio button, si esta seleccionado 1, los 2 o ninguno
+			if (sexo[0].checked == false && sexo[1].checked == false){
+				alert('Ingresa un sexo');
+			}
+
+			//Validamos los terminos y condiciones
+			if (terminos.checked == false) {
+				alert('Acepta los terminos y condiciones');
+			}
+			//evitamos que se enevide el formulario 
+			e.preventDefault();
+		}
+
+		formulario.addEventListener('submit', validar);
+
+		//e.preventDefault(); Previene que se ejecute, pero, debes poner la e dentro de los parentesis de la funcion principal
+	</script>
+</body>
+</html>
