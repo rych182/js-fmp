@@ -17,21 +17,27 @@
 
 		//document.write(amigos.join('-'));
 
-		// -- Metodo Pop y push, Pop agrega elimina el ultimo valor de tu array y el push agrega un nuevo valor a tu array
+		// -- Metodo Pop y push, Pop elimina el ultimo valor de tu array y el push agrega un nuevo valor a tu array
 		//amigos.pop();
 		//document.write(amigos);
 		//amigos.push('Felipe');
 		
 		// -- Metodo Shift y Unshift, shift elimina el primer elemento de mi arreglo y unshift agrega un elemento al inicio de mi arreglo
-		//amigos.unshift('Berenice');
-		//document.write(amigos.join('-'));
-		
+		/*var ciudades = ["Colima","Hermosillo","Nuevo casas grandes","CDMX","Monclovita"];
+			ciudades.shift();
+			document.write(ciudades);
+			ciudades.unshift("Orizaba","Cuauhtemoc");
+			document.write("<br>" + ciudades.join("-"));
+		*/
 
 		// -- Metodo Concat, sirve para juntar 2 o mas arreglos
-		var amigas = ['Tere', 'Pamela', 'Carmen', 'Almita','Yuri', 'Lau', 'Karen'];
-		var comida = ['Hamburguesas','Pizza','Soda'];
-		var estados = ['Sonora','Colima','Veracruz','Morelos','CDMX']
-		var todosMisAmigos = amigos.concat(amigas,comida,estados);
+		var estados = ["Colima", "Sonora", "Veracruz"];
+		var ciudades = ["Monclovita","Nuevo Casas México", "Chilangolandia"];
+		var equiposFutbol = ["Cruz azul", "Chivas", "Pumas"];
+		var todos = estados.concat(ciudades);
+		var todos2 = equiposFutbol.concat(todos);
+		document.write(todos);
+		document.write("<br>" + todos2);
 		//document.write(todosMisAmigos);
 
 
