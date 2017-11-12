@@ -6,6 +6,13 @@
 </head>
 <body>
 	<script>
+	/*EXPLICACION DEL CICLO FOR!!
+		como quieres que se inicie/ la condicion/ y si va a avanzar de 1 en 1
+		for (i = 0; i < 10; i++){
+			document.write("aqui va lo que quieres que imprima.");
+		}
+	*/
+
 	/*
 		for (var i = 0; i <=10 ; i++) {
 			document.write(i + "Hola" + "<br>");
@@ -19,6 +26,8 @@
 	*/
 
 	/*For con arrays
+	A la variable i le agregas
+
 	meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septimbre','Octubre','Noviembre','Diciembre'];
 	for (var i = 0; i < meses.length; i++) {
 		document.write(i+1 + ".-" + meses[i] + "<br>");
@@ -31,6 +40,49 @@ meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Sept
 		document.write("El nombre del mes es:" + meses[mes] + "<br>");
 	};
 	*/
+
+	/*Imprimir mi nombre diez veces.
+
+		var nombre = "Ricardo";
+		for (var i = 0; i < 5 ; i++) {
+			document.write(nombre + "<br>");
+		};
+	*/
+
+	/*
+	ciudades = ['Colima','Hermosillo', 'Orizaba','Cuernavaca'];
+	
+	for (var i = 0; i < ciudades.length; i++) {
+		document.write(i+1 + "- " + ciudades[i] + "<br>"); 
+	}
+	*/
+
+	/*Contando de 3 en 3, esta madre se explica de la siguiente manera:
+	comienza con el 1 y terminara hasta el 10, cuando comienza en el 1, se multiplica por tres, se imprime, luego hay un salto de linea
+	y se sigue con el 2, luego el 2 se multiplica por 3, se imprimer y da un salto de linea. 
+
+	for (var i =1; i <= 10; i++) {
+		document.write(i*3 + "<br>")
+	}
+	*/
+
+/* IMPORTANTE!!!!! MUY IMPORTANTE!!!!!
+ Cuando uses "for" con el "in" y vayas a imprimir, imprime solo ciudad o ciudades, para que veas lo que sucede.
+ Te aparece un contador de lugares(0,1,2,3 etc), por eso los programadores ponen "ciudades[ciudad]" porque va a contar el numero
+  de lugares de tu array(arreglo).
+
+	ciudades = ['Colima','Hermosillo', 'Orizaba','Cuernavaca'];
+	for(ciudad in ciudades){
+		document.write(ciudades[ciudad] + "<br>");
+	}
+
+*/
+
+	ciudades = ['Colima','Hermosillo', 'Orizaba','Cuernavaca'];
+	for(ciudad in ciudades){
+		document.write(ciudades[ciudad] + "<br>");
+
+	}
 	</script>
 </body>
 </html>
